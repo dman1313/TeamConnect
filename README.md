@@ -1,6 +1,6 @@
-# Advanced Learning Platform (TeamConnect)
+# AGORA Agentic Goal-Oriented Reflective Adaptive academy
 
-Welcome to the Advanced Learning Platform! This project was built to deliver secure, accessible, agentic self-development tools for individuals and small groups. It serves as an empathetic "Cognitive Coach" to help users formulate goals, set strict success criteria, generate dynamic learning materials, and foster group collaboration.
+Welcome to AGORA Agentic Goal-Oriented Reflective Adaptive academy! This project was built to deliver secure, accessible, agentic self-development tools for individuals and small groups. It serves as an empathetic "Cognitive Coach" to help users formulate goals, set strict success criteria, generate dynamic learning materials, and foster group collaboration.
 
 ## 🚀 Features
 * **Cognitive Agent Coaching:** An LLM-driven orchestrator that uses the paraphrase-and-pause technique to guide users to their own goals without AI bias.

@@ -1,6 +1,6 @@
 # Product Requirements Specification
 
-This document outlines the core functional requirements and product vision for the Advanced Learning Platform.
+This document outlines the core functional requirements and product vision for AGORA Agentic Goal-Oriented Reflective Adaptive academy.
 
 ## 1. Vision and Target Audience
 The platform is an agentic self-development tool designed to facilitate personal and professional growth. The primary target audience consists of individuals in rural areas, minority communities, and those who lack the financial resources for traditional coaching or tutoring.

@@ -1,6 +1,6 @@
 # System Architecture Specification
 
-This document details the high-level architecture and infrastructural components of the Advanced Learning Platform.
+This document details the high-level architecture and infrastructural components of AGORA Agentic Goal-Oriented Reflective Adaptive academy.
 
 ## 1. High-Level Architectural Pattern
 The platform utilizes a modern, serverless Backend-as-a-Service (BaaS) architecture prioritizing rapid iteration, real-time synchronization, and high availability.

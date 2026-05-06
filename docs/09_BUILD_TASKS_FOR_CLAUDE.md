@@ -1,6 +1,6 @@
 # Deployment and Build Specification
 
-This document defines the deployment pipeline and execution strategy for transitioning the Advanced Learning Platform from development to a live, production-ready state during the hackathon.
+This document defines the deployment pipeline and execution strategy for transitioning AGORA Agentic Goal-Oriented Reflective Adaptive academy from development to a live, production-ready state during the hackathon.
 
 ## 1. Foundation and Environment Setup
 The initial build phase focuses on establishing the core application shells.

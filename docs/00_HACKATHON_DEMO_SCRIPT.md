@@ -1,6 +1,6 @@
 # Demo and Presentation Specification
 
-This document details the intended flow and narrative presentation of the Advanced Learning Platform during the hackathon demonstration.
+This document details the intended flow and narrative presentation of AGORA Agentic Goal-Oriented Reflective Adaptive academy during the hackathon demonstration.
 
 ## Narrative Hook
 The presentation begins by establishing the core vision: delivering top-tier, personalized education to individuals globally, regardless of their geographical location or financial budget. The emphasis is placed on replacing traditional instruction with an agentic "Cognitive Coach" that empowers users rather than lecturing them.

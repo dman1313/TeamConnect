@@ -1,6 +1,6 @@
 # UI and UX Component Specification
 
-This document defines the interface guidelines and user experience paradigms required for the Advanced Learning Platform. The UI must remain highly flexible to accommodate various input modalities while adhering to strict accessibility standards.
+This document defines the interface guidelines and user experience paradigms required for AGORA Agentic Goal-Oriented Reflective Adaptive academy. The UI must remain highly flexible to accommodate various input modalities while adhering to strict accessibility standards.
 
 ## 1. Core Design Principles
 - **Aesthetic Direction:** The interface must project a premium, modern aesthetic utilizing glassmorphism techniques, soft shadows, and vibrant gradient accents. 
