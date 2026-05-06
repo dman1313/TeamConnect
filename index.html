@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h2>Kartel.io</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-target="dashboard">Dashboard</li>
+                <li data-target="coach">Cognitive Coach</li>
+                <li data-target="goals">Team Goals</li>
+                <li data-target="materials">Study Materials</li>
+            </ul>
+            <div class="user-profile">
+                <div class="avatar">D</div>
+                <div class="user-info">
+                    <span class="name">Dwayne</span>
+                    <span class="tokens">15 Tokens</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Dashboard View -->
+            <section id="dashboard" class="view active-view">
+                <header>
+                    <h1>Welcome back, Dwayne</h1>
+                    <p>Your team is making great progress.</p>
+                </header>
+
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <h3>Team Alignment</h3>
+                        <div class="stat-value text-green">100%</div>
+                        <p>All 3 members aligned on current goal</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <h3>Active Actions</h3>
+                        <div class="stat-value text-blue">4/5</div>
+                        <p>Pending daily tasks</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <h3>Recovery Status</h3>
+                        <div class="stat-value text-purple">Excellent</div>
+                        <p>Empathy loop active</p>
+                    </div>
+                </div>
+
+                <div class="recent-activity glass mt-6">
+                    <h2>Daily Action Triage</h2>
+                    <p class="subtitle">Swipe or click to manage your daily tasks</p>
+                    
+                    <div class="swipe-container">
+                        <div class="action-card" id="card-1">
+                            <h4>Read Chapter 4</h4>
+                            <p>Condensed reading material provided by RAG.</p>
+                            <div class="card-actions">
+                                <button class="btn-reject" onclick="handleStruggle('card-1')">Struggling</button>
+                                <button class="btn-accept" onclick="handleComplete('card-1')">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cognitive Coach View -->
+            <section id="coach" class="view">
+                <header>
+                    <h1>Cognitive Coach</h1>
+                    <p>Goal Formulation Phase</p>
+                </header>
+
+                <div class="chat-container glass">
+                    <div class="chat-history" id="chat-history">
+                        <div class="message agent">
+                            <div class="avatar agent-avatar">AI</div>
+                            <div class="bubble">Hello team! What would you like to achieve today?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <button class="voice-btn" id="voice-btn" title="Use Voice Dictation">🎤</button>
+                        <input type="text" id="chat-input" placeholder="Type your goal here...">
+                        <button class="send-btn" id="send-btn">Send</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
