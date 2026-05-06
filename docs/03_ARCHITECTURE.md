@@ -16,14 +16,23 @@ The persistent and real-time computing layers are managed via a centralized BaaS
 - **[Missing] Supabase Core:** The system utilizes Supabase for end-to-end backend management.
 - **Relational Storage:** Core entity tracking (users, goals, tokens) is handled by a fully managed PostgreSQL database.
 - **[Missing] Real-Time Synchronization:** The architecture leverages WebSocket-based real-time subscriptions to ensure instantaneous synchronization of state machine transitions, typing indicators, and multi-user consensus across all client interfaces.
-- **Serverless Compute:** Business logic, including all interactions with the LLM orchestrator, is executed within isolated Edge Functions to ensure security and scalability.
+- **Serverless Compute:** Business logic, including all interactions with the Agentic Orchestrator, is executed within isolated Edge Functions to ensure security and scalability.
 
-### 1.3. LLM Orchestrator
-The cognitive engine of the platform.
-- The orchestrator acts as the middle layer between the Edge Functions and external Large Language Models.
-- It is solely responsible for generating paraphrased responses, generating pedagogical materials, and summarizing WebRTC sessions based on strict system boundaries.
+## 2. Multi-Agent AI Framework
 
-### 1.4. Knowledge Base (Dynamic RAG)
+AGORA moves away from a monolithic "chatbot" architecture in favor of a specialized **Multi-Agent Coordination Framework**. Complex tasks are distributed across specialized agents.
+
+### 2.1. Agent Specializations
+- **The Strategist Agent (Reasoning & Planning):** Serves as the core logic engine. It decomposes complex educational objectives into manageable steps and formulates the adaptive strategy.
+- **The Mediator Agent (Interaction):** Handles the paraphrasing loop and Socratic guidance. It is responsible for detecting emotional cues and applying the Empathy Loop.
+- **The Designer Agent (Content):** Interacts exclusively with the RAG system to dynamically generate Pedagogical Tools (flashcards, summaries) tailored to the exact specifications of the Strategist.
+
+### 2.2. Dual-Memory System Architecture
+To achieve true "Continual Learning" (where the system learns how to teach the specific user better over time), the architecture implements a bifurcated memory system:
+- **Short-Term Memory:** Held in fast-access temporary storage (e.g., Redis). Holds context, current goal trajectory, and temporary data necessary for the immediate session's reasoning.
+- **Long-Term Memory:** Stored natively in the PostgreSQL/pgvector database. Houses historical interactions, successful strategies, and highly personalized learner profiles. This allows the Strategist agent to reference past sessions when deciding current difficulty levels.
+
+## 3. Knowledge Base (Dynamic RAG)
 The retrieval architecture for educational content.
 - The system employs a graph-based indexing strategy, linking discrete chunks of Markdown text semantically.
-- **[Missing] Vector Storage:** Semantic search is executed using a dedicated Vector Store (e.g., pgvector) to retrieve highly relevant context for the LLM orchestrator based on the user's current goal trajectory.
+- **[Missing] Vector Storage:** Semantic search is executed using a dedicated Vector Store (pgvector) to retrieve highly relevant context for the Designer Agent.
